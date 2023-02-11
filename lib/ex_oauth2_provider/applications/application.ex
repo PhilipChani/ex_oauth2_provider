@@ -42,11 +42,11 @@ defmodule ExOauth2Provider.Applications.Application do
   @doc false
   def attrs() do
     [
-      {:is_trusted, :boolean, default: false, null: false},
+      {:is_trusted, :boolean},
       {:name, :string},
       {:redirect_uri, :string},
-      {:scopes, :string, default: ""},
-      {:secret, :string, default: ""},
+      {:scopes, :string},
+      {:secret, :string},
       {:uid, :string}
     ]
   end
